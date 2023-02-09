@@ -39,11 +39,11 @@ while game_is_on:
     if ball.distance(r_paddle)>50 and ball.xcor()>320:
         ball.reset_position()
         scoreboard.l_point()
-        #misses by right paddle
+        #missed by right paddle
 
     if ball.distance(l_paddle)>50 and ball.xcor()<-320:
         ball.reset_position()
         scoreboard.r_point()
-        #misses by lefty paddle
+        #missed by left paddle
 
 screen.exitonclick()
